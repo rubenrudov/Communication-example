@@ -38,6 +38,7 @@ def new_connection_receiver(client_socket: socket.socket, ip_address: str):
     json_struct = json.loads(decoded)
 
     handling_request(client_socket, json_struct)
+    return json_struct
 
 
 def main():
