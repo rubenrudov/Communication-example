@@ -61,7 +61,7 @@ public class SocketTask extends AsyncTask<JSONObject, Void, JSONObject> {
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(this.socket.getOutputStream(), StandardCharsets.UTF_8); // outputStreamWriter creating
             outputStreamWriter.write(data); // Writes the data into  the outputStreamWriter
             outputStreamWriter.flush(); // Sends the data to the server "flushes the water"
-            outputStreamWriter.close();
+            // outputStreamWriter.close();
 
             Log.d("Result", "Successfully sent");
         } catch (Exception e) {
