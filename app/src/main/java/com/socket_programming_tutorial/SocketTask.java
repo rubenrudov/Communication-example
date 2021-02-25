@@ -16,8 +16,8 @@ public class SocketTask extends AsyncTask<JSONObject, Void, JSONObject> {
 
     // Constants
     private final static String IP_ADDRESS = "XXX.XXX.XXX.XXX";    // Host's IP address in the LAN
-    private static final int PORT = 6000;       // HTTP port
-    private static final int PACKET_SIZE = 1024;    // standard 1kb packet size
+    private final static int PORT = 6000;       // HTTP port
+    private final static int PACKET_SIZE = 1024;    // standard 1kb packet size
 
     // Properties
     private InputStreamReader inputStreamReader;
